@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Voyer - MVP para Hackathon Movemment
 
 Plataforma descentralizada donde usuarios pueden comprar contenido exclusivo de creadores mediante el protocolo x402 en la blockchain Movemment (L1 con Move).
@@ -160,7 +159,10 @@ MIT License - Ver archivo LICENSE para mas detalles
 ## Hackathon
 
 Proyecto desarrollado para el hackathon de Movemment, una blockchain Layer 1 que utiliza el lenguaje Move para smart contracts.
+<<<<<<< HEAD
 =======
 # Voyer-Movemment
 Projecto Blockchain Layer 1 que utiliza el lenguaje Move para smart contracts
 >>>>>>> d83e12e4b6fe137a23035ffee4d2be859ffc12ff
+=======
+>>>>>>> ee55c85 (Initial commit)

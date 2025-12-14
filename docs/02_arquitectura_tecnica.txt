@@ -1,0 +1,65 @@
+ARQUITECTURA TECNICA - VOYER MVP
+
+Stack Frontend:
+- React 18.2 (libreria UI)
+- Vite 5.0 (build tool y dev server)
+- React Router 6.20 (navegacion cliente)
+- Tailwind CSS 3.3 (framework CSS utility-first)
+
+Estructura de Componentes:
+/components/common/     - Componentes reutilizables (Button, Card, Header)
+/components/user/       - Componentes del flujo usuario (Chat)
+/components/creator/    - Componentes del flujo creador (Forms)
+/pages/                 - Paginas principales (Home, Voyer, SpiedOn)
+/styles/                - Configuracion de tema y estilos globales
+
+Sistema de Rutas:
+/ (Home)               - Pagina inicial con botones principales
+/voyer                 - Interfaz de usuario con chat de agente
+/spied-on              - Panel de creador con formulario de subida
+
+Paleta de Colores Lo-Fi:
+Colores calidos apagados inspirados en cultura lo-fi/aesthetic
+Tonos principales:
+- Cream: #E8DCC4
+- Sand: #D4B896
+- Terracota: #C8997A
+- Rust: #A87860
+
+Backgrounds:
+- Main: #F5F1E8
+- Card: #EDE6D6
+- Dark: #3A3530
+
+Textos:
+- Primary: #4A4039
+- Secondary: #736B5E
+- Light: #9B8F7E
+
+Acentos:
+- Orange: #D99A6C
+- Peach: #E5B299
+- Brown: #8B6F47
+
+Estado Actual del MVP:
+- Todas las interfaces son VISUALES unicamente
+- NO hay funcionalidad de backend
+- NO hay integracion con wallet (boton presente pero inactivo)
+- NO hay envio de formularios ni mensajes reales de chat
+- Objetivo: validar UI/UX antes de implementar logica
+
+Arquitectura Futura (Post-MVP):
+Frontend: React + Vite (actual)
+Backend: Node.js/Python con API REST
+Smart Contracts: Move language en Movemment blockchain
+Storage: IPFS/Arweave para contenido descentralizado
+Database: PostgreSQL para metadata e indexing
+Cache: Redis para optimizacion de queries
+
+Flujo de Datos Futuro:
+1. Usuario interactua con frontend React
+2. Frontend comunica con API backend
+3. Backend ejecuta queries a blockchain via RPC
+4. Smart contracts en Move gestionan logica de negocio
+5. Contenido se almacena en storage descentralizado
+6. Metadata se indexa en database tradicional para queries rapidas

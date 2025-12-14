@@ -1,0 +1,269 @@
+ROADMAP POST-MVP - VOYER
+
+FASE 1: MVP VISUAL (Hackathon - 3-4 dias)
+[COMPLETADO] Setup proyecto React + Vite + Tailwind
+[COMPLETADO] Diseño sistema de componentes lo-fi
+[COMPLETADO] Pagina Home con navegacion funcional
+[COMPLETADO] Pagina Voyer (chat skeleton visual)
+[COMPLETADO] Pagina Spied On (formulario skeleton visual)
+[COMPLETADO] Documentacion completa en archivos .txt
+[COMPLETADO] Responsive design basico
+[COMPLETADO] Paleta de colores lo-fi implementada
+
+FASE 2: INTEGRACION WALLET (Semana 1-2 post-hackathon)
+[ ] Investigar wallets compatibles con Movemment
+[ ] Implementar deteccion de wallet
+[ ] Conectar wallet (lectura de balance y direccion)
+[ ] Display de balance en header
+[ ] Firma de mensajes para autenticacion
+[ ] Persistencia de sesion con localStorage
+[ ] Manejo de cambio de cuenta/red
+[ ] Desconexion de wallet
+[ ] UI/UX pulido para estados de wallet (conectando, error, desconectado)
+
+FASE 3: BACKEND Y SMART CONTRACTS (Semana 2-4)
+[ ] Escribir smart contracts en Move:
+    - ContentRegistry.move (registro de contenido)
+    - PaymentHandler.move (manejo de pagos x402)
+    - AccessControl.move (control de acceso)
+    - MarketplaceFees.move (comisiones de plataforma)
+
+[ ] Setup ambiente de desarrollo Move
+[ ] Testing local de contratos
+[ ] Deploy en testnet Movemment
+[ ] Testing en testnet
+[ ] Documentacion de contratos
+
+[ ] Setup backend (Node.js/Python):
+    - API REST endpoints
+    - Conexion a RPC node
+    - Indexer de blockchain
+    - Database PostgreSQL
+    - Redis cache
+
+[ ] Sistema de storage descentralizado:
+    - Integracion IPFS o Arweave
+    - Upload de archivos
+    - Generacion de hashes
+    - Recuperacion de contenido
+
+FASE 4: FUNCIONALIDAD CHAT (Semana 3-5)
+[ ] Implementar agente IA:
+    - Integracion GPT-4/Claude API
+    - Prompts optimizados para recomendaciones
+    - Context awareness
+    - Manejo de conversaciones
+
+[ ] Base de datos de contenido:
+    - Schema de metadata
+    - Indexing para busqueda rapida
+    - Tags y categorias
+    - Sistema de ratings
+
+[ ] Sistema de recomendaciones:
+    - Algoritmo basado en preferencias
+    - Filtros por precio, categoria, creador
+    - Busqueda semantica
+    - Trending content
+
+[ ] UI del chat:
+    - Mensajes en tiempo real
+    - Typing indicators
+    - Envio de mensajes funcional
+    - Historial de conversacion
+    - Compartir contenido en chat
+
+FASE 5: FUNCIONALIDAD CREADOR (Semana 4-6)
+[ ] Upload real de archivos:
+    - Drag & drop funcional
+    - Progress bar de subida
+    - Validacion de tipos de archivo
+    - Limites de tamaño
+
+[ ] Procesamiento de media:
+    - Compresion automatica de imagenes
+    - Generacion de thumbnails
+    - Conversion de formatos video
+    - Watermarks opcionales
+
+[ ] Sistema de pricing:
+    - Configuracion de precio por contenido
+    - Descuentos y promociones
+    - Bundles de contenido
+    - Suscripciones mensuales
+
+[ ] Dashboard de creador:
+    - Lista de publicaciones
+    - Analytics de ventas
+    - Graficos de ingresos
+    - Top content
+    - Engagement metrics
+    - Gestionar publicaciones (editar/eliminar)
+
+FASE 6: TRANSACCIONES Y PAGOS (Semana 5-7)
+[ ] Implementar flujo completo de compra:
+    - Seleccion de contenido
+    - Preview antes de comprar
+    - Confirmacion de precio
+    - Request de pago a wallet
+
+[ ] Integracion x402:
+    - Llamadas a smart contracts
+    - Firma de transacciones
+    - Confirmacion on-chain
+    - Manejo de errores
+
+[ ] Sistema de desbloqueo:
+    - Verificacion de proof of purchase
+    - Generacion de links de acceso
+    - Streaming o descarga segun tipo
+    - Acceso permanente guardado
+
+[ ] Historial y receipts:
+    - Historial de compras (usuario)
+    - Historial de ventas (creador)
+    - Receipts descargables
+    - Exportacion para taxes
+
+FASE 7: OPTIMIZACION Y SEGURIDAD (Semana 6-8)
+[ ] Auditorias de smart contracts:
+    - Auditoria interna
+    - Auditoria externa profesional
+    - Bug fixes de hallazgos
+    - Re-deploy si necesario
+
+[ ] Testing extensivo:
+    - Unit tests (frontend y backend)
+    - Integration tests
+    - E2E tests con Playwright/Cypress
+    - Load testing
+    - Security testing
+
+[ ] Optimizacion de performance:
+    - Code splitting
+    - Lazy loading de componentes
+    - Optimizacion de imagenes
+    - Caching strategies
+    - CDN para assets estaticos
+
+[ ] Optimizacion de costos:
+    - Gas optimization en contratos
+    - Batching de transacciones
+    - Compression de datos on-chain
+    - Efficient storage patterns
+
+[ ] Seguridad adicional:
+    - Rate limiting en API
+    - Anti-spam mechanisms
+    - CAPTCHA en formularios
+    - Encriptacion de contenido premium
+    - DDoS protection
+
+FASE 8: FEATURES AVANZADAS (Semana 8-12)
+[ ] Sistema de suscripciones:
+    - Suscripcion mensual a creadores
+    - Tiers de suscripcion
+    - Contenido exclusivo para suscriptores
+    - Auto-renewal
+
+[ ] Tipping para creadores:
+    - Boton de tip en perfil
+    - Mensajes con tip
+    - Leaderboard de top supporters
+    - Badges para supporters
+
+[ ] NFTs para contenido exclusivo:
+    - Minteo de contenido como NFT
+    - Ediciones limitadas
+    - Royalties en ventas secundarias
+    - Marketplace integrado
+
+[ ] Marketplace secundario:
+    - Reventa de acceso a contenido
+    - Licencias transferibles
+    - Sistema de ofertas
+    - Historial de propiedad
+
+[ ] Sistema de reputacion:
+    - Ratings y reviews
+    - Sistema de badges
+    - Verificacion de creadores
+    - Penalizaciones por mal comportamiento
+
+[ ] Moderacion de contenido:
+    - Reportes de usuarios
+    - Review manual de reportes
+    - Automated content filtering
+    - Politicas de comunidad
+    - Sistema de apelaciones
+
+[ ] Social features:
+    - Seguir creadores
+    - Feed personalizado
+    - Comentarios en contenido
+    - Compartir en redes sociales
+    - Notificaciones push
+
+FASE 9: SCALING Y LANZAMIENTO (Semana 12-16)
+[ ] Beta testing:
+    - Programa de beta cerrada
+    - Feedback de usuarios
+    - Iteraciones basadas en feedback
+    - Bug fixes
+
+[ ] Marketing pre-lanzamiento:
+    - Landing page
+    - Whitelist para early access
+    - Colaboraciones con creadores
+    - Presencia en redes sociales
+    - Community building (Discord/Telegram)
+
+[ ] Mainnet launch:
+    - Deploy final de contratos
+    - Migracion de datos de testnet
+    - Limites iniciales de seguridad
+    - Monitoring 24/7
+
+[ ] Post-launch:
+    - Customer support
+    - Onboarding de creadores
+    - Incentivos de adopcion temprana
+    - Analytics y metricas
+    - Iteraciones rapidas basadas en uso real
+
+FASE 10: CRECIMIENTO (Mes 4+)
+[ ] Expansion de features segun demanda
+[ ] Integracion con otras blockchains (cross-chain)
+[ ] Mobile apps (iOS y Android)
+[ ] API publica para desarrolladores
+[ ] Plugin para creadores (WordPress, etc)
+[ ] Programa de afiliados
+[ ] Partnerships con plataformas existentes
+[ ] Tokenomics y governance (DAO eventual)
+
+METRICAS DE EXITO POR FASE:
+Fase 2: Wallet conectada exitosamente 100 veces
+Fase 3: Contratos desplegados en testnet sin errores criticos
+Fase 4: 50 conversaciones de chat con recomendaciones exitosas
+Fase 5: 20 creadores suben contenido real
+Fase 6: 100 transacciones exitosas en testnet
+Fase 7: Zero vulnerabilidades criticas en auditoria
+Fase 8: 500 usuarios activos, 100 creadores
+Fase 9: 5000 usuarios en mainnet, $10k en volumen
+Fase 10: Product-market fit, crecimiento organico sostenido
+
+PRESUPUESTO ESTIMADO:
+- Desarrollo (4 meses): $40k-60k
+- Auditorias de seguridad: $15k-25k
+- Infraestructura (ano 1): $12k-18k
+- Marketing inicial: $10k-15k
+- Legal y compliance: $5k-10k
+- Total estimado: $82k-128k
+
+EQUIPO RECOMENDADO:
+- 2 Frontend developers (React/TypeScript)
+- 1 Backend developer (Node.js/Python)
+- 1 Smart contract developer (Move)
+- 1 UI/UX designer
+- 1 Product manager / coordinador
+- 1 Marketing / community manager (part-time inicialmente)

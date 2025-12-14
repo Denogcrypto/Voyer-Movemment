@@ -1,0 +1,36 @@
+VOYER - CONCEPTO GENERAL DEL PROYECTO
+
+Descripcion:
+Plataforma descentralizada donde usuarios pueden comprar contenido exclusivo
+de creadores mediante el protocolo x402 en la blockchain Movemment (L1 con Move).
+
+Nombre del Proyecto:
+- "Voyer" (usuario que consume contenido)
+- "Spied On" (creador que sube contenido)
+
+Objetivo del MVP:
+Crear una interfaz visual completa que demuestre el flujo de usuario y creador,
+sin funcionalidad backend aun. El enfoque es validar la experiencia de usuario
+y la estetica lo-fi antes de integrar la logica blockchain.
+
+Publico Objetivo:
+- Creadores de contenido que buscan monetizacion directa
+- Usuarios que desean acceso exclusivo a contenido premium
+- Comunidad cripto familiarizada con wallets y transacciones on-chain
+
+Diferenciadores:
+- Integracion nativa con x402 para micropagos
+- Chat con agente para descubrimiento de contenido
+- Estetica lo-fi minimalista, diferente a plataformas tradicionales
+- Blockchain Movemment (Move language) para seguridad y eficiencia
+
+Vision del Producto:
+Voyer busca ser la plataforma preferida para monetizacion de contenido en Web3,
+combinando la facilidad de uso de plataformas Web2 con las ventajas de
+descentralizacion, propiedad de datos y pagos instantaneos de Web3.
+
+Hackathon:
+Este proyecto se desarrolla para un hackathon enfocado en Movemment, una
+blockchain Layer 1 que utiliza el lenguaje Move para smart contracts. El MVP
+se centra en demostrar el potencial de la plataforma a traves de una interfaz
+pulida y profesional que sirva como proof of concept.

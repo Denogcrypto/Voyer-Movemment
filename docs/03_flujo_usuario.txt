@@ -1,0 +1,65 @@
+FLUJO DE USUARIO (VOYER)
+
+Pagina Principal:
+1. Usuario llega a la home page
+2. Ve dos opciones claramente diferenciadas:
+   - Boton "Voyer" (explorar y comprar contenido)
+   - Boton "Spied On" (soy creador de contenido)
+3. Opcionalmente puede ver boton "Connect Wallet" en header (no funcional en MVP)
+4. Interfaz minimalista con estetica lo-fi
+5. Logo centrado con diseño limpio
+
+Seleccion de Voyer:
+6. Usuario hace clic en boton "Voyer"
+7. Es redirigido a la ruta /voyer
+8. Transicion suave entre paginas
+
+Pagina Voyer (Chat con Agente):
+9. Header con:
+   - Logo Voyer
+   - Boton "Volver" para regresar a home
+   - Boton "Connect Wallet" (visual, no funcional)
+
+10. Interfaz de chat ocupando el area principal:
+   - Area de mensajes scrolleable
+   - Mensaje de bienvenida del agente (pre-cargado)
+   - Burbujas de mensaje con estilos diferenciados:
+     * Agente: alineado izquierda, color lofi-card
+     * Usuario: alineado derecha, color lofi-terracota
+
+11. Input area en la parte inferior:
+   - Campo de texto expandible
+   - Placeholder: "Escribe tu mensaje..."
+   - Boton enviar con icono o texto "Enviar"
+   - En MVP: NO funcional, solo visual
+
+Elementos Visuales Detallados:
+- Scroll suave en area de mensajes
+- Espaciado consistente entre burbujas
+- Timestamps en mensajes (estaticos en MVP)
+- Avatar/icono para el agente
+- Transiciones suaves en hover states
+- Responsive design para mobile y desktop
+
+Estado Futuro (Post-MVP):
+- Chat funcional con agente IA (GPT-4/Claude)
+- Agente analiza preferencias del usuario
+- Recomendaciones personalizadas de contenido
+- Busqueda por palabras clave y tags
+- Filtros de precio, categoria, creador
+- Preview de contenido antes de comprar
+- Integracion con x402 para compra instantanea
+- Wallet conectada muestra balance
+- Historial de conversaciones guardado
+- Compartir recomendaciones con otros usuarios
+
+Mensajes de Ejemplo del Agente:
+- "Hola! Soy tu asistente para descubrir contenido exclusivo. ¿Que tipo de contenido te interesa?"
+- "Puedo ayudarte a encontrar videos, fotos, tutoriales y mas. ¿Tienes alguna preferencia?"
+- "Estos son algunos creadores populares en [categoria]..."
+
+Interaccion Usuario (Futuro):
+- "Busco tutoriales de fotografia"
+- "Contenido de [nombre_creador]"
+- "Videos de menos de $5"
+- "Muestra lo mas nuevo en [categoria]"

@@ -1,0 +1,102 @@
+FLUJO DE CREADOR (SPIED ON)
+
+Pagina Principal:
+1. Creador llega a la home page
+2. Identifica que quiere subir contenido
+3. Selecciona boton "Spied On"
+4. Es redirigido a la ruta /spied-on
+
+Pagina Spied On (Panel Creador):
+5. Header con:
+   - Logo Voyer
+   - Boton "Volver" para regresar a home
+   - Boton "Connect Wallet" (visual, no funcional en MVP)
+
+6. Panel principal con formulario de publicacion:
+
+   Campo 1: Nombre de Publicacion
+   - Input de texto simple
+   - Placeholder: "Ej: Tutorial de fotografia nocturna"
+   - Validacion visual (borde cambia al focus)
+   - Maximo de caracteres (visual)
+
+   Campo 2: Tags
+   - Input multiple con sistema de chips/badges
+   - Permite agregar tags escribiendo y presionando Enter
+   - Tags aparecen como chips con boton X para eliminar
+   - Placeholder: "Agrega tags para categorizar tu contenido"
+   - Ejemplos: fotografia, tutorial, video, premium, etc.
+   - Visual de chips con colores lo-fi
+
+   Campo 3: Contenido (Upload)
+   - Area de drag & drop para archivos
+   - Icono visual de upload
+   - Texto: "Arrastra archivos aqui o haz clic para seleccionar"
+   - Tipos aceptados: imagenes (jpg, png, gif), videos (mp4, mov)
+   - Preview visual de archivos seleccionados (futuro)
+   - En MVP: solo visual, no sube archivos realmente
+
+   Boton Publicar:
+   - Boton prominente con estilo lo-fi
+   - Texto: "Publicar Contenido"
+   - Estados: default, hover, disabled (visual)
+   - En MVP: NO funcional, no envia datos
+
+Elementos del Formulario (Detalles Visuales):
+- Card contenedora con padding generoso
+- Labels claros para cada campo
+- Espaciado consistente entre campos
+- Estilos focus en inputs (borde terracota)
+- Mensajes de placeholder informativos
+- Responsive layout (stack vertical en mobile)
+
+Estado Futuro (Post-MVP):
+- Subida real de archivos a IPFS/Arweave
+- Procesamiento de media:
+  * Compresion automatica
+  * Generacion de thumbnails
+  * Watermarks opcionales
+  * Multiples resoluciones
+
+- Validaciones completas:
+  * Nombre requerido (min 10 caracteres)
+  * Al menos 3 tags
+  * Contenido requerido (archivos validos)
+  * Tamano maximo de archivos
+
+- Configuracion adicional:
+  * Precio en tokens x402
+  * Tipo de licencia (exclusivo, compartido)
+  * Visibilidad (publico, privado, suscriptores)
+  * Programar publicacion futura
+
+- Preview antes de publicar:
+  * Vista previa de como se vera
+  * Editar antes de confirmar
+  * Confirmacion final
+
+- Dashboard de creador:
+  * Lista de publicaciones existentes
+  * Estadisticas de ventas
+  * Analytics de vistas
+  * Ingresos totales y por publicacion
+  * Editar/eliminar publicaciones
+  * Gestionar suscriptores
+
+- Sistema de notificaciones:
+  * Nueva venta realizada
+  * Comentarios en contenido
+  * Nuevos seguidores
+  * Hitos alcanzados
+
+Flujo Post-Publicacion (Futuro):
+1. Creador completa formulario
+2. Preview muestra como se vera el contenido
+3. Creador confirma publicacion
+4. Smart contract registra metadata en blockchain
+5. Contenido se sube a storage descentralizado
+6. Se genera URL/hash unico para acceso
+7. Publicacion aparece en marketplace
+8. Agente puede recomendar a usuarios relevantes
+9. Creador ve analytics en tiempo real
+10. Recibe pagos automaticos via x402 cuando hay compras

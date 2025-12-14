@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-lofi-bg text-lofi-textPrimary;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+
+  * {
+    @apply transition-colors duration-200;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  /* Boton principal estilo lo-fi */
+  .lofi-button {
+    @apply px-6 py-3 rounded-lofi bg-lofi-terracota text-lofi-bg
+           font-medium hover:bg-lofi-rust transition-all duration-200
+           shadow-sm hover:shadow-md cursor-pointer;
+  }
+
+  .lofi-button:disabled {
+    @apply bg-lofi-disabled cursor-not-allowed opacity-60;
+  }
+
+  .lofi-button-secondary {
+    @apply px-6 py-3 rounded-lofi bg-lofi-sand text-lofi-textPrimary
+           font-medium hover:bg-lofi-hover transition-all duration-200
+           shadow-sm hover:shadow-md cursor-pointer;
+  }
+
+  /* Card contenedor */
+  .lofi-card {
+    @apply bg-lofi-card rounded-lofi shadow-sm p-6;
+  }
+
+  /* Input estilo lo-fi */
+  .lofi-input {
+    @apply border-2 border-lofi-sand rounded-lofi px-4 py-2
+           bg-lofi-bg text-lofi-textPrimary
+           focus:border-lofi-terracota focus:outline-none
+           placeholder:text-lofi-textLight
+           transition-colors duration-200;
+  }
+
+  .lofi-input:focus {
+    @apply ring-2 ring-lofi-terracota ring-opacity-20;
+  }
+
+  /* Textarea estilo lo-fi */
+  .lofi-textarea {
+    @apply border-2 border-lofi-sand rounded-lofi px-4 py-2
+           bg-lofi-bg text-lofi-textPrimary
+           focus:border-lofi-terracota focus:outline-none
+           placeholder:text-lofi-textLight
+           resize-none
+           transition-colors duration-200;
+  }
+
+  .lofi-textarea:focus {
+    @apply ring-2 ring-lofi-terracota ring-opacity-20;
+  }
+
+  /* Tag/Chip estilo lo-fi */
+  .lofi-tag {
+    @apply inline-flex items-center gap-1 px-3 py-1 rounded-full
+           bg-lofi-orange text-lofi-bg text-sm font-medium;
+  }
+
+  /* Link estilo lo-fi */
+  .lofi-link {
+    @apply text-lofi-brown hover:text-lofi-rust underline-offset-2
+           transition-colors duration-200;
+  }
+
+  /* Header/Navigation */
+  .lofi-header {
+    @apply bg-lofi-card shadow-sm border-b-2 border-lofi-sand;
+  }
+}
+
+@layer utilities {
+  /* Sombras personalizadas lo-fi */
+  .shadow-lofi {
+    box-shadow: 0 2px 8px rgba(74, 64, 57, 0.08);
+  }
+
+  .shadow-lofi-lg {
+    box-shadow: 0 4px 16px rgba(74, 64, 57, 0.12);
+  }
+
+  /* Transiciones suaves */
+  .transition-lofi {
+    @apply transition-all duration-300 ease-in-out;
+  }
+}

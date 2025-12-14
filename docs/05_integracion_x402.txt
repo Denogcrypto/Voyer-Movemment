@@ -1,0 +1,130 @@
+INTEGRACION CON X402 - PROTOCOLO DE PAGOS
+
+Que es x402:
+Protocolo de micropagos diseñado para funcionar sobre blockchain Movemment.
+Permite transacciones rapidas, economicas y seguras para compra de contenido
+digital, optimizado para pagos de bajo valor con fees minimos.
+
+Ventajas de x402:
+- Fees ultrabajos (fracciones de centavo)
+- Confirmaciones rapidas (segundos, no minutos)
+- Soporte nativo en Movemment blockchain
+- Integrado con wallets populares del ecosistema
+- Batching de transacciones para mayor eficiencia
+- Reversiones automaticas en caso de falla
+
+Flujo de Pago Completo (Futuro):
+1. Usuario descubre contenido via chat con agente
+2. Agente muestra detalles del contenido:
+   - Preview (thumbnail/descripcion)
+   - Precio en tokens
+   - Rating y reviews
+   - Informacion del creador
+
+3. Usuario confirma interes en comprar
+4. Frontend genera request de pago x402
+5. Wallet del usuario muestra popup de confirmacion:
+   - Monto exacto
+   - Destinatario (creador)
+   - Fee de transaccion
+   - Gas estimado
+
+6. Usuario firma transaccion con wallet
+7. Transaccion x402 se ejecuta en blockchain:
+   - Smart contract valida fondos
+   - Transfiere pago al creador (menos comision plataforma)
+   - Registra compra en blockchain
+   - Genera proof of purchase
+
+8. Smart contract desbloquea contenido automaticamente
+9. Usuario recibe acceso inmediato:
+   - Link de descarga/streaming
+   - Acceso permanente guardado en wallet
+   - NFT de recibo (opcional)
+
+10. Creador recibe pago instantaneo:
+    - Notificacion de venta
+    - Fondos disponibles en wallet
+    - Analytics actualizados
+
+Componentes Tecnicos Necesarios (Post-MVP):
+
+Smart Contracts en Move:
+1. PaymentHandler.move
+   - Procesa pagos x402
+   - Calcula y distribuye fees
+   - Maneja refunds en caso de error
+   - Emite eventos de pago
+
+2. ContentRegistry.move
+   - Registra metadata de contenido
+   - Asocia contenido con creadores
+   - Mantiene precios y disponibilidad
+   - Gestiona actualizaciones
+
+3. AccessControl.move
+   - Verifica proof of purchase
+   - Gestiona permisos de acceso
+   - Maneja licencias y expiraciones
+   - Control de comparticion
+
+4. MarketplaceFees.move
+   - Calcula comisiones de plataforma
+   - Distribuye fees a stakeholders
+   - Maneja treasury de la plataforma
+   - Sistema de rewards/incentivos
+
+Integracion Wallet:
+- Conexion con wallets compatibles Movemment
+- Deteccion automatica de wallet instalada
+- Switch entre multiples wallets
+- Firma de transacciones segura
+- Display de balance en tiempo real
+- Historial completo de transacciones
+- Exportacion de datos fiscales
+
+Backend Requirements:
+- API REST para interactuar con blockchain
+- RPC node de Movemment
+- Indexer para queries rapidas:
+  * Busqueda de contenido
+  * Historial de compras por usuario
+  * Ventas por creador
+  * Analytics de plataforma
+- Sistema de cache (Redis)
+- Queue para procesamiento de transacciones
+- Webhooks para notificaciones
+- Sistema de retry para transacciones fallidas
+
+Seguridad:
+- Validacion de signatures on-chain
+- Rate limiting para prevenir spam
+- Anti-sybil mechanisms
+- Escrow para disputas
+- Multisig para fondos de plataforma
+- Auditorias de smart contracts
+- Bug bounty program
+
+Estado en MVP:
+- Boton "Connect Wallet" presente pero NO funcional
+- NO hay integracion real con x402
+- NO hay transacciones de blockchain
+- NO hay smart contracts desplegados
+- Enfoque exclusivo en validar UI/UX primero
+
+Roadmap de Integracion:
+Fase 1: Conectar wallet (leer balance, mostrar direccion)
+Fase 2: Escribir smart contracts en Move
+Fase 3: Desplegar en testnet de Movemment
+Fase 4: Implementar flujo de pago basico
+Fase 5: Testing extensivo en testnet
+Fase 6: Auditoria de seguridad
+Fase 7: Deploy a mainnet con limites iniciales
+Fase 8: Scaling gradual basado en demanda
+
+Metricas de Exito:
+- Tiempo promedio de transaccion < 5 segundos
+- Fee promedio < $0.01 USD
+- Tasa de exito de transacciones > 99%
+- Costo de gas optimizado (< 0.001 tokens)
+- Zero vulnerabilidades criticas en auditorias
